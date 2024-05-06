@@ -1,3 +1,8 @@
+<?php 
+session_start();
+?>
+
+
 <!doctype html>
 <html lang="en">
 
@@ -10,6 +15,16 @@
 </head>
 
 <body>
+    <nav>
+        <?php 
+            if (isset($_SESSION['username'])) {
+                echo "<span>". $_SESSION['username'] ."</span>";
+                echo "<a href='logout.php'>Sign Out</a>";
+            } else {
+                header("Location: index.html");
+            }
+        ?>
+    </nav>
     <div class="searchbox">
         <form action="" class="form_data">
             <input type="search" name="" class="search" placeholder="Search.....">
