@@ -6,6 +6,7 @@
 .container {
     width:350px;
     margin: 200px auto;
+    /* background-color: black; */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 20px 10px green;
@@ -14,7 +15,7 @@
 
 .form-group {
     margin-bottom: 10px;
-}
+}   
 
 label {
     display: block;
